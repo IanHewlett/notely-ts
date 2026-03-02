@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Format
+      - name: Format Check
         run: npm run format:check
 
   tests:
