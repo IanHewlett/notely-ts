@@ -5,6 +5,14 @@ on:
     branches: [main]
 
 jobs:
+  style:
+    name: Style
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Format
+        run: npm format:check
+
   tests:
     name: Tests
     runs-on: ubuntu-latest
